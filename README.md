@@ -2,6 +2,8 @@
 Simulate a real GPU workload on Kubernetes and monitor it using Prometheus, Grafana, and NVIDIA DCGM Exporter.
 
 🧱 Architecture Diagram
+
+```
                       ┌──────────────────────────────┐
                       │        Kubernetes Cluster     │
                       │                              │
@@ -22,8 +24,12 @@ Simulate a real GPU workload on Kubernetes and monitor it using Prometheus, Graf
                       │      │ Grafana │─────────────┘
                       │      └─────────┘
                       └──────────────────────────────┘
+
+```
+
 📁 GitHub Repo Structure
 
+```
 gpu-metrics-dashboard/
 ├── terraform/                # (optional later)
 │   └── main.tf               # AWS GPU instance or EKS
@@ -39,3 +45,4 @@ gpu-metrics-dashboard/
 ├── .gitlab-ci.yml / .github/ # CI/CD pipeline (optional)
 └── README.md
 
+```
